@@ -1,0 +1,475 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background: linear-gradient(0.40turn ,black, rgb(18, 75, 1)) no-repeat fixed;
+}
+a{
+    cursor: pointer;
+}
+.logodiv{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.logosmall{
+    height: 40px;
+    margin-bottom: 140%;
+}
+.frontmovie a{
+    color: black;
+    }
+    .frontmovie button{
+        background-color: green;
+        margin-top: 40px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+        border: 0;
+        border-radius: 15px;
+    }
+nav{
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 0.7fr 2fr 0.7fr;
+    background-color: black;
+    border-radius: 0 10px 10px 0;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: auto;
+}
+nav ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+nav ul li a img{
+    height: 40px;
+    filter: invert(100%);
+}
+.nav2{
+    right: 0;
+    background-color: rgb(0, 0, 0,0.80);
+    border-radius: 10px 0 0 10px;
+}
+.forms{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    margin-left: 0;
+}
+form{
+    background: rgb(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    place-content: center;
+    margin-top: auto;
+    margin-left: auto;
+    width: 500px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+form p{
+    margin-top: 30px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500px;
+}
+.Error{
+    font-size: 20px;
+    color: black;
+    background: rgba(255, 57, 57, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.check{
+    background-color: rgb(0, 128, 0, 0.50);
+}
+form input{
+    width: 400px;
+    height: 30px;
+    background: rgb(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+form textarea{
+    width: 400px;
+    background: rgb(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+form button{
+    margin-top: 40px;
+    height: 40px;
+    border: none;
+    background: rgb(0, 128, 0);
+    font-size: 21px;
+    font-weight: 600;
+    color: black;
+    border-radius: 5px;
+}
+form input:focus{
+    border-bottom: 1px solid black;
+}
+form select{
+    margin-top: 20px;
+    width: 400px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    background: rgb(0, 0, 0,0.50);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+}
+section{
+    margin-left: 60px;
+    height: 100vh;
+    width: 96.8%;
+}
+.toparticle{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0,0.10);
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0.50);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(68, 109, 60, 0.5);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(48, 77, 42, 0.5);
+    border-radius: 10px;
+  }
+.toparticle img {
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3); /* horizontal offset, vertical offset, blur radius, color */
+}
+
+.toparticle div{
+    padding: 70px;
+    max-width: 800px;
+}
+.toparticle div h1{
+    font-size: 35px;
+    padding-bottom: 50px;
+    color: rgb(226, 226, 226);
+    text-shadow: 5px 5px 5px black;
+}
+.toparticle div p{
+    font-size: 25px;
+    color: rgb(207, 207, 207);
+    text-shadow: 5px 5px 5px black;
+}
+.belowarticle{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    overflow-y: auto;
+    padding-left: 20px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.search{
+    margin-top: 30px;
+    overflow-y: unset;
+    flex-wrap: wrap;
+}
+.belowarticle div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.belowarticle div a{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.belowarticle div a:hover{
+    background-color: rgb(0, 0, 0,0.50);
+    border-radius: 10px;
+}
+.belowarticle div img{
+border-radius: 10px;
+box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.belowarticle div h3{
+    color: rgb(207, 207, 207);
+    text-shadow: 5px 5px 5px black;
+}
+.cutters{
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.seriepop{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.20);
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.e{
+    display: flex;
+}
+.seriepop .serieinfo{
+    background: rgb(29, 29, 29);
+    max-width: 810px;
+    max-height: 700px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 15px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.seriepop p{
+    color: white;
+    max-width: 700px;
+}
+.seriepop h2{
+    color: white;
+}
+.seriepop .serieinfo .seriecover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+}
+.seriepop .serieinfo .seriecover div{
+    width: 700px;
+    height: 400px;
+    background: radial-gradient(rgb(0, 0, 0, 0) 43%, black 100%);
+    border-radius: 15px;
+}
+.episodes{
+    display: flex;
+    flex-direction: column;
+}
+.episodes .episode{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    max-height: 168px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    max-width: 680px;
+    background-color: rgb(0, 0, 0,0.4);
+}
+.episode a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.episode p{
+    color: rgb(165, 165, 165);
+}
+.episode img{
+    height: 160px;
+    border-radius: 20px;
+}
+.episodewatchbutton{
+    color: rgb(0, 0, 0);
+    background: green;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 2px;
+    float: right;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure it's above other elements */
+}
+.gname{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+.gname1{
+    font-size: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: rgb(133, 133, 133,0.50);
+    border-radius: 5px;
+}
+.watch{
+    background-color: rgb(0, 0, 0,0.50);
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+.watch div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.watch div a{
+    margin-left: auto;
+    padding-right: 20px;
+}
+.watch h1{
+    color: white;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.watch p{
+    color: white;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.watch video {
+    width: 87%;
+    display: block;
+    border: 1px solid #ddd;
+    background-color: #000;
+    justify-self: center;
+    margin: auto auto;
+}
+.watch .epiham{
+    background-color: rgb(0, 0, 0, 0.50);
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+    right: -700px;
+    padding-right: 20px;
+    width: 40%;
+    height: 1000px;
+    border-radius: 10px 0 0 10px;
+    transition: right 300ms;
+}
+.watch .epiham1{
+    display: flex;
+    right: 0;
+    transition: right 300ms;
+}
+.epiham{
+    background-color: rgb(0, 0, 0, 0.50);
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+    right: -700px;
+    padding-right: 20px;
+    width: 40%;
+    height: 1000px;
+    border-radius: 10px 0 0 10px;
+    transition: right 300ms;
+}
+.epiham .episode{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    max-height: 168px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    max-width: 680px;
+    background-color: rgb(0, 0, 0,0.4);
+}
+.epiham .episode p{
+    color: unset;
+    font-size: unset;
+    padding-top: unset;
+    padding-left: unset;
+}
+.menuu{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    row-gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 70px;
+}
+.menuu a{
+    color: black;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0,0.50);
+    padding: 2px;
+    text-decoration: none;
+}
+.menuu1{
+    display: flex;
+}
+.menuu a:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
